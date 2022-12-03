@@ -102,10 +102,10 @@ const data =
     "111.74\n" +
     "1.89\n" +
     "16926.0\n" +
-    "110..9\n" +
+    "110.09\n" +
     "1.75\n" +
     "18255.7\n" +
-    "620.J49\n" +
+    "620.049\n" +
     "644135\n" +
     "520.0\n" +
     "3548.337\n" +
@@ -305,7 +305,7 @@ const data =
     "23.4987\n" +
     "113.48\n" +
     "4.14\n" +
-    "2J986.5\n" +
+    "20986.5\n" +
     "112.00\n" +
     "3.89\n" +
     "22317.8\n" +
@@ -344,7 +344,11 @@ let y = 0;
 while (y < splittedData.length -1) {
 
     for (let i = 0; i < 12; i++) {
-        result += splittedData[i + y] + " | ";
+        const value = splittedData[i + y];
+        if(isNaN(Number(value))) {
+            console.log('Value not a number : ', value)
+        }
+        result += value + ( i !== 11 ?  ";" : "");
     }
     result += "\n";
     y += 12;

@@ -10,6 +10,6 @@ Raw data put in  trajectory_page-XXXX.txt
 
 Clean data for text. Usually the headers and sometimes in the middle.
 
-Duplicate an XXX.js and change the data const with the content of trajectory_page-XXXX.txt
+Duplicate an XXX.0s and change the data const with the content of trajectory_page-XXXX.txt
 
-For the moment, each page has its own .js to better detect parsing mistakes, makes it easier to work with. 
+For the moment, each page has its own .0s to better detect parsing mistakes, makes it easier to work with. 
