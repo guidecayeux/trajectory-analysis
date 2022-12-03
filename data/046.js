@@ -406,7 +406,7 @@ while (y < splittedData.length -1) {
         if(isNaN(Number(value))) {
             console.log('Value not a number : ', value)
         }
-        result += value + ";";
+        result += value +( i !== 10 ?  ";" : "");
     }
     result += "\n";
     y += 11;
